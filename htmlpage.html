@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Lithuania!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="javascript.js" type="text/javascript"></script> 
+<!------------------------------DatePicker--------------------------------------------------------------------------->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script>
+      $( function() {
+        $( "#datepicker" ).datepicker();
+      } );
+    </script>
+<!------------------------------------------------------------------------------------------------------------------->
+</head>
+<body>
+    <div id="page-content">
+        <div id="sidebar">
+            <img src="http://i.imgur.com/fMz0so4.jpg" alt="Smiley face" height="150">
+            Something to consider..<br><br>
+            <div style="padding-left: 50px;">
+                <a href="#">Home</a><br>
+                <a href="#">About</a><br>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div id="content" onmouseover="ChangeColor('content'); return false;" onmouseout="LeaveColor('content'); return false;">
+            <h1>Lithuania</h1>
+            <p>This will be Lithuanian website soon! Hope you come back to check it out!</p>
+            <form>
+                    <label>Date</label>
+                    <p>Date: <input type="text" id="datepicker"></p>
+                    <label>Location</label>
+                    <input type="text" name="location" /><br />
+                    <input type="submit" value="Submit" />
+            </form>
+        </div>
+        <div id="footer">&copy; 2016 Mikpoli Ltd</div>
+    </div>
+</body>
+</html>
+<script>
+
+    function ChangeColor(id) {
+        document.getElementById(id).style.backgroundColor = "green";
+    }
+function LeaveColor(id) {
+    document.getElementById(id).style.backgroundColor = "grey";
+}
+</script><
